@@ -5,27 +5,27 @@
 Summary:	HDF4 data handler module for the OPeNDAP data server
 Summary(pl.UTF-8):	Moduł obsługujący dane HDF4 dla serwera danych OPeNDAP
 Name:		opendap-hdf4_handler
-Version:	3.11.2
+Version:	3.11.5
 Release:	1
 License:	LGPL v2.1+
 Group:		Daemons
 Source0:	http://www.opendap.org/pub/source/hdf4_handler-%{version}.tar.gz
-# Source0-md5:	7197f66f0521d7b3bb13c1746d3e3ca6
+# Source0-md5:	3782139d2f7b954a391770ca60fac239
 URL:		http://opendap.org/
 BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.10
-%{?with_tests:BuildRequires:	bes >= 3.11.0}
-BuildRequires:	bes-devel >= 3.11.0
+%{?with_tests:BuildRequires:	bes >= 3.13.0}
+BuildRequires:	bes-devel >= 3.13.0
 BuildRequires:	hdf-devel >= 4
 BuildRequires:	hdf-eos-devel >= 2
-BuildRequires:	libdap-devel >= 3.12.0
+BuildRequires:	libdap-devel >= 3.13.0
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool >= 2:2
 BuildRequires:	pkgconfig
-Requires:	bes >= 3.11.0
+Requires:	bes >= 3.13.0
 Requires:	hdf >= 4
 Requires:	hdf-eos >= 2
-Requires:	libdap >= 3.12.0
+Requires:	libdap >= 3.13.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
